@@ -68,7 +68,7 @@ function soundListener(buttonListener, audioSelect, jsConfetti, currVolume)
 {
     buttonListener.addEventListener('click', event => {
         
-        if(hornvalue == 3)
+        if(hornvalue == 3 && currVolume.value != 0)
         {
             jsConfetti.addConfetti({
                 emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
